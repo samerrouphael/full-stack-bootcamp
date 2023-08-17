@@ -56,3 +56,28 @@ const counter = 3;
   var lastname2='rouphael';
   let result= name2 + lastname2;
   console.log(result)
+
+
+let text1 = "20";
+let text2 = "5";
+console.log(text1 !== text2);
+console.log( text1== text2);
+text1== text2;
+text1!==text2;
+let res1 = (text1==text2);
+let res2 = text1 < text2;
+let res3 = text1> text2;
+let res4 = text1>= text2;
+let res5 = text1<= text2;
+
+
+const result0 = `5 + 3 * 2`;
+console.log(result0)
+const result1 =`10 / 2 + 3`;
+console.log(result1)
+const result2 ='10 / (2 + 3)';
+console.log(result2)
+
+// result 1 > result2
+
+
