@@ -52,4 +52,7 @@ const counter = 3;
 
   // last one give the value of 2+3
 
-  
+  var name2 =" Samer";
+  var lastname2='rouphael';
+  let result= name2 + lastname2;
+  console.log(result)
