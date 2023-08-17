@@ -41,3 +41,10 @@ if (age < 18 && hasDriverLicense == false && hasCar == false) {
     needdriver == true;
 }
 else { needdriver == false; }
+
+
+var role = admin;
+if (role = admin){ console.log('You have read and write access for the data')}
+else if(role='user'){ console.log('You have only read access for the data');}
+ else if(role='guest'){ console.log('You have no access for the data')}
+else { console.log('User role is not recoginized')}
