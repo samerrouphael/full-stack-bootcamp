@@ -29,3 +29,24 @@ switch (operation) {
 
 console.log(compute(5, 2, 'add'));
 console.log(compute(5, 2, '*'));
+globalVar = 5;
+const squareNumber = (number) => number * number;
+console.log(squareNumber(globalVar))
+
+
+let i ;
+for (i=1;i<11;i++){ 
+    console.log(i)
+}
+j=11;
+while(j>1){ 
+    j--;
+    console.log(j)}
+
+let k=0;
+do { 
+    if (k%2 ==0){
+    console.log(k)}
+    k++;
+
+}while (k<11)

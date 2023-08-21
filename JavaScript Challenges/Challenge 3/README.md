@@ -63,7 +63,7 @@ Using a do-while loop, print the numbers from 1 to 10, but only print the number
 
 ### Advanced Loop Challenge
 
-Create an array of your favorite fruits. Using any loop of your choice, iterate over the array and print out each fruit name only if its length is greater than 5 characters.
+ Using any loop of your choice, iterate over the array and print out each fruit name only if its length is greater than 5 characters.
 
 Commit: # Bonus Step: Advanced Concepts
 
