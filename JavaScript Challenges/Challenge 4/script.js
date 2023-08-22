@@ -26,3 +26,15 @@ console.log(adress)
 console.log(nationality);
 
 
+let personalinfo ={ 
+    name2 : 'Ssmer',    age:'36', height:'180', adress:'newrawda',
+     contactinfo :{ phome:'70307183', email:'rouphaels@gmail.com'
+
+    }
+
+}
+console.log(personalinfo.contactinfo.email)
+let resofnumber =[];
+console.log()
+
+
