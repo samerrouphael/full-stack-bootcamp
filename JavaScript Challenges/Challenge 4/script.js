@@ -22,7 +22,6 @@ console.log(third)
 let {Name,adress,nationality} = generalinfo;
 console.log(Name);
 console.log(adress)
-
 console.log(nationality);
 
 
