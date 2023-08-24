@@ -30,28 +30,50 @@ document.addEventListener('keydown', function (event) {
 
 document.addEventListener('keydown', function (event) {
     if (event.key === 's' || event.key === 'S') {
-        para.style.padding = 'red'
+        para.style.padding = '20px'
     }
 })
 document.addEventListener('keydown', function (event) {
     if (event.key === 'w' || event.key === 'W') {
-        para.toggleAttribute = 'visible'
+        para.style.diplay = 'none'
     }
 })
-ocument.addEventListener('keydown', function (event) {
+document.addEventListener('keydown', function (event) {
     if (event.key === 'd' || event.key === 'D') {
         let para2 = document.createElement('p');
         document.body.appendChild(para2);
-        para.textContent = "samer";
+        para2.textContent = "d is pressed";
     }
 })
 
 document.addEventListener('keydown', function (event) {
-    if (event.key === 'space') {
-        para.style.fontsize = '50px'
+    if (event.key === 'Spacebar'||event.key==='') {
+        para.style.fontSize = '250px'
     }
 })
 
+let form = document.createElement('form')
+document.body.appendChild(form)
+form.appendChild(document.createElement("br"));
+let username = document.createElement('input')
+form.appendChild(username) 
+form.appendChild(document.createElement("br"));
+let email = document.createElement('input')
+form.appendChild(email)
+form.appendChild(document.createElement("br"));
+
+let password = document.createElement('input')
+form.appendChild(password)
+form.appendChild(document.createElement("br"));
+let confpass = document.createElement('input')
+form.appendChild(confpass)
+form.appendChild(document.createElement("br"));
 
 
+
+let button2=document.createElement("input");
+button2.type="button"
+
+form.appendChild(button2);
+button2.value="Submit";
 
