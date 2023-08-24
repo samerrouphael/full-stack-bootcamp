@@ -19,9 +19,26 @@ let para = document.createElement('h1');
 document.body.appendChild(para);
 para.textContent = "hello world";
 para.style.width="10px";
-para.style.color='red';
+para.style.color='green';
 para.style="dotted";
 
-para.addEventListener("keydown", (event) => {});
+let input = document.querySelector('input')
 
-onkeydown = (event) => {};
+input.addEventListener('keydown',(a)=>{ 
+    h1.style.backgroundColor='red'
+    
+    input.addEventListener('keydown',(s)=>{ 
+        h1.style.padding='10px'    
+    })
+    input.addEventListener('keydown',(d)=>{ 
+        let para2 = document.createElement('p');
+        document.body.appendChild(para2);
+    })
+    input.addEventListener('keydown',(w)=>{ 
+        h1.toggle='visible'
+    })
+    input.addEventListener('keydown',(space)=>{ 
+        h1.style.fontsize='100px'
+    })
+})
+
