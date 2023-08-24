@@ -12,7 +12,7 @@ button.style.cursor = 'pointer'
 
 button.addEventListener("click", function () {
     button.style.backgroundColor = "red"
-    button.textContent = '10'
+    let randomNumber = Math.floor(Math.random() * 1000) + 1;
 })
 
 let para = document.createElement('h1');
@@ -47,7 +47,7 @@ document.addEventListener('keydown', function (event) {
 })
 
 document.addEventListener('keydown', function (event) {
-    if (event.key === 'Spacebar'||event.key==='') {
+    if (event.key === 'Spacebar' || event.key === '') {
         para.style.fontSize = '250px'
     }
 })
@@ -56,7 +56,7 @@ let form = document.createElement('form')
 document.body.appendChild(form)
 form.appendChild(document.createElement("br"));
 let username = document.createElement('input')
-form.appendChild(username) 
+form.appendChild(username)
 form.appendChild(document.createElement("br"));
 let email = document.createElement('input')
 form.appendChild(email)
@@ -68,12 +68,18 @@ form.appendChild(document.createElement("br"));
 let confpass = document.createElement('input')
 form.appendChild(confpass)
 form.appendChild(document.createElement("br"));
-
-
-
-let button2=document.createElement("input");
-button2.type="button"
-
+button2.type = "button"
 form.appendChild(button2);
-button2.value="Submit";
+button2.value = "Submit";
+
+var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(! pattern.test(email.value)){
+        email.setAttribute("placeholder", "Please enter a valid email address.")}
+
+
+if(password.value !==confpass.value){ alert('error')}
+
+if(password.value !==confpass.value && pattern==true) { alert('submitting')}
+let button2 = document.createElement("input");
+
 
