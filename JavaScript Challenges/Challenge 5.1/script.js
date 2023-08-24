@@ -1,4 +1,3 @@
-
 let button = document.createElement("button");
 document.body.appendChild(button);
 
@@ -76,9 +75,7 @@ var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if(! pattern.test(email.value)){
         email.setAttribute("placeholder", "Please enter a valid email address.")}
 
-
 if(password.value !==confpass.value){ alert('error')}
-
 if(password.value !==confpass.value && pattern==true) { alert('submitting')}
 let button2 = document.createElement("input");
 
