@@ -12,18 +12,19 @@ console.log('child3')
 
 
 document.body.appendChild(newDiv);
-newDiv.appendChild(newpara);
+newDiv.appendChild(paragraph);
 
 let containerdiv = document.createElement("div");
 containerdiv.className = "container";
 
 let paragraph = document.createElement('p');
-paragraph.innerHTML = "hello world";
-
+paragraph.text = "hello world";
+document.body.appendChild(containerdiv);
+containerdiv.appendChild(paragraph);
 
 document.querySelector('.container')
 
-paragraph.style.backgroundcolor = 'red';
+containerdiv.style.backgroundcolor = 'red';
 paragraph.style.fontsize = '24 px';
 paragraph.style.fontfamily = "Helvetica";
 paragraph.style.border = " 1px ,solid, black"
@@ -45,8 +46,8 @@ button2.style.backgroundColor="red"
 button2.style.cursor="pointer"
 
 
-Eventlistener for mouseover (hover)
-button2.addEventListener("mouseover", function() {
+//.Eventlistener for mouseover (hover)
+.button2.addEventListener("mouseover", function() {
     button2.style.backgroundColor = "orange"; // Change background color on hover
 });
 
