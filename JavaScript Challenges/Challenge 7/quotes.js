@@ -94,3 +94,11 @@ const quotesArray = [
       "Hell, there are no rules here-- we're trying to accomplish something.",
   },
 ];
+function loopArray() {
+  
+  quotesArray.forEach(function (author,content)  {
+     console.log(author);
+  });
+}
+
+loopArray();
